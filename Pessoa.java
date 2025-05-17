@@ -1,4 +1,4 @@
-package trabalho1_estudo;
+package trabalho1;
 
 public class Pessoa {
     private int id;
@@ -17,6 +17,27 @@ public class Pessoa {
         bilhetes[quant_bilhetes].setAposta(1, a1);
         bilhetes[quant_bilhetes].setAposta(2, a2);
         bilhetes[quant_bilhetes].setAposta(3, a3);
+        this.quant_bilhetes++;
+    }
+
+    public int getSaldo(){
+        return this.saldo;
+    }
+
+    public void subtraiSaldo(int preco){
+        this.saldo = this.saldo - preco;
+    }
+
+    public int getId(){
+        return this.id;
+    }
+
+    public int getQuantBilhetes(){
+        return this.quant_bilhetes;
+    }
+
+    public Bilhete getBilhete(int idx){
+        return bilhetes[idx];
     }
 
 }

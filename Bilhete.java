@@ -1,4 +1,4 @@
-package trabalho1_estudo;
+package trabalho1;
 
 public class Bilhete {
     private int concurso_prentencente;
